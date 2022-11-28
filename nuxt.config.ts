@@ -10,11 +10,12 @@ export default defineNuxtConfig({
     },
 
     css: [
+        '~/assets/css/main.css',
+        '~/assets/css/rubik.fontface.css',
         'primevue/resources/themes/lara-dark-blue/theme.css',
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css',
         'primeflex/primeflex.css',
-        '~/assets/css/rubik.fontface.css',
     ],
     build: {
         transpile: ['primevue']
