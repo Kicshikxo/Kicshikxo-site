@@ -4,24 +4,12 @@
         <Repos />
         <!-- <Feature /> -->
         <Footer />
-        <PScrollTop class="custom-scrolltop" />
+        <PScrollTop class="bg-primary border-round w-2rem h-2rem" />
     </div>
 </template>
 
 <style scoped>
-::v-deep(.custom-scrolltop) {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 4px;
-    background-color: var(--primary-color);
-}
-
-::v-deep(.custom-scrolltop):hover {
-    background-color: var(--primary-color);
-}
-
-::v-deep(.custom-scrolltop) .p-scrolltop-icon {
+:deep(.p-scrolltop) .p-scrolltop-icon {
     font-size: 1rem;
-    color: var(--primary-color-text);
 }
 </style>
