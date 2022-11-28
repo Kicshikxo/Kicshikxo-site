@@ -1,7 +1,7 @@
 <template>
     <section class="surface-section px-4 pt-6 md:px-6 lg:px-8 text-center">
         <div class="mb-6 font-bold text-900 text-2xl">
-            Мои репозитории github
+            Мои репозитории Github
         </div>
         <div class="grid">
             <div v-for="repo in repos" class="col-12 md:col-4 xl:col-3 p-2 text-left">
