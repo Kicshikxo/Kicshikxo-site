@@ -2,13 +2,20 @@
     <div class='grid grid-nogutter surface-section text-800'>
         <div class='col-12 md:col-6 p-6 text-center md:text-left flex align-items-center '>
             <section>
-                <span class='block text-6xl font-bold mb-1'>Create the screens your</span>
-                <div class='text-6xl text-primary font-bold mb-3'>your visitors deserve to see</div>
-                <p class='mt-0 mb-4 text-700 line-height-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="text-6xl font-bold flex flex-column">
+                    <div class='text-6xl font-bold mb-1'>Привет, я <span class="text-primary">Kicshikxo</span></div>
+                    <div class='text-5xl font-medium mb-1'>и я начинающий разработчик</div>
+                </div>
 
-                <p-button label='Learn More' type='button' class='mr-3 p-button-raised'></p-button>
-                <p-button label='Live Demo' type='button' class='p-button-outlined'></p-button>
+                <p class='mt-0 mb-4 text-700 line-height-3 text-2xl'>Этот веб-сайт расскажет обо мне</p>
+
+                <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
+                    <p-button label="Github" type='button' class='mr-3 p-button-raised' icon="pi pi-github" />
+                </nuxt-link>
+
+                <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
+                    <p-button label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
+                </nuxt-link>
             </section>
         </div>
         <div class='col-12 md:col-6 overflow-hidden'>
