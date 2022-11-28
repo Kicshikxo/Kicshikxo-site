@@ -17,6 +17,11 @@ export default defineNuxtConfig({
         'primeicons/primeicons.css',
         'primeflex/primeflex.css',
     ],
+
+    modules: [
+        '@nuxt/image-edge',
+    ],
+
     build: {
         transpile: ['primevue']
     }
