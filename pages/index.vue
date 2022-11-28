@@ -1,5 +1,6 @@
 <template>
     <div>
-        <p-button>Index page</p-button>
+        <Hero />
+        <Feature />
     </div>
 </template>
