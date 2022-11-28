@@ -1,8 +1,8 @@
 <template>
     <section class='grid grid-nogutter surface-section text-800 min-h-screen align-items-center relative'>
-        <div class='col-12 md:col-6 px-6 text-center md:text-left '>
+        <div class='col-12 md:col-6 px-6 pt-6 md:pt-0 text-center md:text-left '>
             <section>
-                <div class="text-6xl py-4 font-bold flex flex-column">
+                <div class="text-6xl font-bold flex flex-column">
                     <div class='text-6xl font-bold mb-1'>Привет, я <span class="text-primary">Kicshikxo</span></div>
                     <div class='text-5xl font-medium mb-1'>и я — начинающий разработчик</div>
                 </div>
