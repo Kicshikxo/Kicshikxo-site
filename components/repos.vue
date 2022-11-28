@@ -11,7 +11,7 @@
                             class="text-primary font-bold mr-2 no-underline hover:underline">
                             {{ repo.name }}
                         </nuxt-link>
-                        <p-chip class="text-xs surface-ground surface-border border-1 py-1 px-2">
+                        <p-chip class="text-xs surface-ground surface-border border-1 py-1 px-2 align-self-start">
                             {{ repo.private ? 'Private' : 'Public' }}
                         </p-chip>
                     </div>
