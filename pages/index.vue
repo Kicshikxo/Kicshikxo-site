@@ -1,5 +1,5 @@
 <template>
     <div>
-        Index page
+        <p-button>Index page</p-button>
     </div>
 </template>
