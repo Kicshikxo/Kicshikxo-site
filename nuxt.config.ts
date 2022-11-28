@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
     app: {
         head: {
+            htmlAttrs: {
+                'lang': 'ru'
+            },
             title: 'Kicshikxo\'s site',
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
