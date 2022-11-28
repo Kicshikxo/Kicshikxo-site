@@ -1,5 +1,5 @@
 <template>
-    <div class="surface-section px-4 py-8 md:px-6 lg:px-8 text-center">
+    <div class="surface-section px-4 py-0 md:px-6 lg:px-8 text-center">
         <div class="mb-6 font-bold text-900 text-2xl">
             Мои репозитории github
         </div>
