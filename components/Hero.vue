@@ -1,21 +1,23 @@
 <template>
     <section class='grid grid-nogutter surface-section text-800 min-h-screen align-items-center relative'>
-        <div class='col-12 md:col-6 p-6 text-center md:text-left '>
+        <div class='col-12 md:col-6 px-6 text-center md:text-left '>
             <section>
                 <div class="text-6xl font-bold flex flex-column">
                     <div class='text-6xl font-bold mb-1'>Привет, я <span class="text-primary">Kicshikxo</span></div>
-                    <div class='text-5xl font-medium mb-1'>и я начинающий разработчик</div>
+                    <div class='text-5xl font-medium mb-1'>и я — начинающий разработчик</div>
                 </div>
 
                 <p class='mt-1 mb-4 text-700 text-2xl'>Этот веб-сайт расскажет обо мне</p>
 
-                <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
-                    <p-button label="Github" type='button' class='mr-3 p-button-raised' icon="pi pi-github" />
-                </nuxt-link>
+                <div class="flex flex-column md:flex-row gap-3">
+                    <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
+                        <p-button label="Github" type='button' class='p-button-raised' icon="pi pi-github" />
+                    </nuxt-link>
 
-                <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
-                    <p-button label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
-                </nuxt-link>
+                    <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
+                        <p-button label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
+                    </nuxt-link>
+                </div>
             </section>
         </div>
         <div class='col-12 md:col-6 overflow-hidden'>
@@ -23,7 +25,7 @@
                 style='clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%);' />
         </div>
         <div class="absolute bottom-0 left-0 right-0 text-center">
-            <div @click="scrolldown" class="scrolldown pi pi-angle-double-down mb-3 text-4xl text-800"></div>
+            <div @click="scrolldown" class="scrolldown pi pi-chevron-down mb-3 text-2xl text-800"></div>
         </div>
         <div id="end-hero-section" class="absolute bottom-0"></div>
     </section>
