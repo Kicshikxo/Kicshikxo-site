@@ -3,5 +3,6 @@
         <Hero />
         <Repos />
         <Feature />
+        <Footer />
     </div>
 </template>
