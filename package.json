@@ -13,7 +13,6 @@
         "primevue": "^3.20.0"
     },
     "devDependencies": {
-        "@nuxt/image-edge": "^1.0.0-27821548.ab054e4",
         "nuxt": "3.0.0"
     }
 }

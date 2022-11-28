@@ -12,7 +12,7 @@
             </section>
         </div>
         <div class='col-12 md:col-6 overflow-hidden'>
-            <nuxt-img height="630" src='/images/hero.webp' alt='Image' class='md:ml-auto block'
+            <img height="630" src='/images/hero.webp' alt='Image' class='md:ml-auto block'
                 style='clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)' />
         </div>
     </div>
