@@ -2,7 +2,7 @@
     <div>
         <Hero />
         <Repos />
-        <Feature />
+        <!-- <Feature /> -->
         <Footer />
     </div>
 </template>
