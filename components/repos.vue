@@ -1,5 +1,5 @@
 <template>
-    <div class="surface-section px-4 py-0 md:px-6 lg:px-8 text-center">
+    <section class="surface-section px-4 pt-6 md:px-6 lg:px-8 text-center">
         <div class="mb-6 font-bold text-900 text-2xl">
             Мои репозитории github
         </div>
@@ -28,11 +28,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>
 const { data: repos } = await useFetch('https://api.github.com/users/Kicshikxo/repos?sort=pushed')
-
-// console.log(repos)
 </script>
