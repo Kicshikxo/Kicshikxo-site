@@ -10,13 +10,13 @@
                 <p class='mt-1 mb-4 text-700 text-2xl'>Этот веб-сайт расскажет обо мне</p>
 
                 <div class="flex flex-column md:flex-row gap-3">
-                    <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
-                        <p-button label="Github" type='button' class='p-button-raised' icon="pi pi-github" />
-                    </nuxt-link>
+                    <NuxtLink to="https://github.com/Kicshikxo" target="blank" class="no-underline">
+                        <PButton label="Github" type='button' class='p-button-raised' icon="pi pi-github" />
+                    </NuxtLink>
 
-                    <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
-                        <p-button label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
-                    </nuxt-link>
+                    <NuxtLink to="https://t.me/Kicshikxo" target="blank" class="no-underline">
+                        <PButton label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
+                    </NuxtLink>
                 </div>
             </section>
         </div>
