@@ -21,7 +21,7 @@
             </section>
         </div>
         <div class='col-12 md:col-6 overflow-hidden'>
-            <img width="100%" src='/images/hero.webp' alt='Image'
+            <img class="w-full" src='/images/hero.webp' alt='Image'
                 style='clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%);' />
         </div>
         <div class="absolute bottom-0 left-0 right-0 text-center">
