@@ -5,6 +5,15 @@ export default defineNuxtConfig({
                 'lang': 'ru'
             },
             title: 'Kicshikxo\'s site',
+            meta: [
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: 'Kicshikxo\'s portfolio website'
+                }
+            ],
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
                 { rel: 'preload', href: '/fonts/Rubik-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
