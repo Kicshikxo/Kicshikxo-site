@@ -4,7 +4,7 @@
             Мои репозитории Github
         </div>
         <div class="grid">
-            <div v-for="repo in repos" class="col-12 md:col-4 xl:col-3 p-2 text-left">
+            <div v-for="repo in repos" :key="repo.id" class="col-12 md:col-4 xl:col-3 p-2 text-left">
                 <div class="shadow-1 p-3 border-1 border-round surface-border min-h-full flex flex-column">
                     <div class="flex align-items-center">
                         <NuxtLink :to="repo.html_url" target="_blank"
