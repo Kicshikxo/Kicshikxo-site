@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="h-screen flex flex-column align-items-center justify-content-center">
-            <div class="bg-white text-primary font-bold text-8xl">
+            <div class="text-primary font-bold text-8xl">
                 {{ error.statusCode }}
             </div>
             <div class="mt-6 font-bold text-6xl text-900">
