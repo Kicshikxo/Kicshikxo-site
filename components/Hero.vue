@@ -21,7 +21,7 @@
             </section>
         </div>
         <div class='col-12 md:col-6 overflow-hidden'>
-            <img class="w-full" src='/images/hero.webp' alt='Image'
+            <nuxt-img class="w-full" src='/images/hero.webp' alt='hero-image'
                 style='clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%);' />
         </div>
         <div class="absolute bottom-0 left-0 right-0 text-center">
