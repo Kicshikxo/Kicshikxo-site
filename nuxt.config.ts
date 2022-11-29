@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/color-mode',
         '@nuxt/image-edge',
-        'nuxt-purgecss',
+        // 'nuxt-purgecss',
     ],
 
     build: {
