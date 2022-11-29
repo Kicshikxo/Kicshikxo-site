@@ -13,12 +13,13 @@ export default defineNuxtConfig({
     },
 
     css: [
-        '~/assets/css/main.css',
-        '~/assets/css/rubik.fontface.css',
         'primevue/resources/themes/lara-light-blue/theme.css',
         'primevue/resources/primevue.css',
         'primeicons/primeicons.css',
         'primeflex/primeflex.css',
+
+        '~/assets/css/rubik.fontface.css',
+        '~/assets/css/main.css',
     ],
 
     modules: [
