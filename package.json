@@ -15,6 +15,7 @@
     },
     "devDependencies": {
         "@nuxt/image-edge": "^1.0.0-27827328.bc9ddc0",
-        "nuxt": "3.0.0"
+        "nuxt": "3.0.0",
+        "nuxt-purgecss": "^2.0.0"
     }
 }
