@@ -5,8 +5,8 @@
                 <div class="text-6xl font-bold flex flex-column">
                     <div class='text-6xl font-bold mb-1'>
                         Привет, я <span class="text-primary">Kicshikxo</span>
-                        <nuxt-img class="hello-emoji mx-3" width="50" height="50" src="/images/hello-emoji.webp"
-                            alt="hello emoji" />
+                        <nuxt-img class="hello-emoji mx-3 hidden md:inline" width="50" height="50"
+                            src="/images/hello-emoji.webp" alt="hello emoji" />
                     </div>
                     <div class='text-5xl font-medium mb-1'>и я — начинающий разработчик</div>
                 </div>
