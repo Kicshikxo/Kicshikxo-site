@@ -4,7 +4,7 @@
         <Repos />
         <!-- <Feature /> -->
         <Footer />
-        <PScrollTop class="bg-primary border-round w-2rem h-2rem text-orange-500" />
+        <p-scroll-top class="bg-primary border-round w-2rem h-2rem text-orange-500" />
     </div>
 </template>
 
