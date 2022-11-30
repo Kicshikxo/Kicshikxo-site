@@ -11,10 +11,6 @@ export default defineNuxtConfig({
                     name: 'description',
                     content: 'Kicshikxo\'s portfolio website'
                 },
-                {
-                    name: 'yandex-verification',
-                    content: '3c7d949b676d1fe0'
-                }
             ],
             link: [
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
