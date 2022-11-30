@@ -3,20 +3,24 @@
         <div class='col-12 md:col-6 px-6 pt-6 md:pt-0 text-center md:text-left '>
             <section>
                 <div class="text-6xl font-bold flex flex-column">
-                    <div class='text-6xl font-bold mb-1'>Привет, я <span class="text-primary">Kicshikxo</span></div>
+                    <div class='text-6xl font-bold mb-1'>
+                        Привет, я <span class="text-primary">Kicshikxo</span>
+                        <nuxt-img class="hello-emoji mx-3" width="50" height="50" src="/images/hello-emoji.webp"
+                            alt="hello emoji" />
+                    </div>
                     <div class='text-5xl font-medium mb-1'>и я — начинающий разработчик</div>
                 </div>
 
                 <p class='mt-1 mb-4 text-700 text-2xl'>Этот веб-сайт расскажет обо мне</p>
 
                 <div class="flex flex-column md:flex-row gap-3">
-                    <NuxtLink to="https://github.com/Kicshikxo" target="blank" class="no-underline">
-                        <PButton label="Github" type='button' class='p-button-raised' icon="pi pi-github" />
-                    </NuxtLink>
+                    <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
+                        <p-button label="Github" type='button' class='p-button-raised' icon="pi pi-github" />
+                    </nuxt-link>
 
-                    <NuxtLink to="https://t.me/Kicshikxo" target="blank" class="no-underline">
-                        <PButton label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
-                    </NuxtLink>
+                    <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
+                        <p-button label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
+                    </nuxt-link>
                 </div>
             </section>
         </div>
@@ -52,6 +56,41 @@ function scrolldown() {
 
     100% {
         transform: translateY(-12px);
+    }
+}
+
+.hello-emoji {
+    animation: shake 1.8s infinite;
+    transform-origin: 70% 70%;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(-10deg);
+    }
+
+    20% {
+        transform: rotate(12deg);
+    }
+
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(9deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
     }
 }
 </style>
