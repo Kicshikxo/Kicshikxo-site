@@ -7,13 +7,13 @@
             <div v-for="repo in repos" :key="repo.id" class="col-12 md:col-4 xl:col-3 p-2 text-left">
                 <div class="shadow-1 p-3 border-1 border-round surface-border min-h-full flex flex-column">
                     <div class="flex align-items-center">
-                        <NuxtLink :to="repo.html_url" target="_blank"
+                        <nuxt-link :to="repo.html_url" target="_blank"
                             class="text-primary font-bold mr-2 no-underline hover:underline">
                             {{ repo.name }}
-                        </NuxtLink>
-                        <PChip class="text-xs surface-ground surface-border border-1 py-1 px-2 align-self-start">
+                        </nuxt-link>
+                        <p-chip class="text-xs surface-ground surface-border border-1 py-1 px-2 align-self-start">
                             {{ repo.private ? 'Private' : 'Public' }}
-                        </PChip>
+                        </p-chip>
                     </div>
                     <div class="text-700 text-sm my-2 flex-grow-1">
                         {{ repo.description }}
