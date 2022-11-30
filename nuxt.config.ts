@@ -10,6 +10,10 @@ export default defineNuxtConfig({
                     hid: 'description',
                     name: 'description',
                     content: 'Kicshikxo\'s portfolio website'
+                },
+                {
+                    name: 'yandex-verification',
+                    content: '79698fc8a4e785b6'
                 }
             ],
             link: [
