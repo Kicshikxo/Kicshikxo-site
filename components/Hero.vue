@@ -15,11 +15,12 @@
 
                 <div class="flex flex-column md:flex-row gap-3">
                     <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
-                        <p-button label="Github" type='button' class='p-button-raised' icon="pi pi-github" />
+                        <p-button label="Github" type='button' class='p-button-raised' icon="pi w-1rem pi-github" />
                     </nuxt-link>
 
                     <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
-                        <p-button label="Telegram" type='button' class='p-button-outlined' icon="pi pi-telegram" />
+                        <p-button label="Telegram" type='button' class='p-button-outlined'
+                            icon="pi w-1rem pi-telegram" />
                     </nuxt-link>
                 </div>
             </section>
