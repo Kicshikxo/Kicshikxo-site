@@ -13,7 +13,8 @@ export default defineNuxtConfig({
                 },
             ],
             link: [
-                { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+                // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+                { rel: 'icon', type: 'image/png', href: '/favicon.png' },
                 { rel: 'preload', href: '/fonts/Rubik-Regular.woff2', as: 'font', type: 'font/woff2', crossorigin: '' },
             ]
         }
