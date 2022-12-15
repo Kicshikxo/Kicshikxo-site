@@ -11,6 +11,7 @@
         "@mdi/js": "^7.0.96",
         "@nuxtjs/color-mode": "^3.2.0",
         "@nuxtjs/robots": "^3.0.0",
+        "nuxt-icon": "^0.1.8",
         "primeflex": "^3.3.0",
         "primeicons": "^6.0.1",
         "primevue": "^3.20.0",
