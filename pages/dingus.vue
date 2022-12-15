@@ -21,6 +21,9 @@ let controls: OrbitControls
 
 onMounted(() => {
     const root: HTMLElement = dingus.value
+    new ResizeObserver((event) =>
+        renderer.setSize(event[0].target.clientWidth, event[0].target.clientHeight, false)
+    ).observe(root)
 
     stats = Stats()
     root.appendChild(stats.dom)
