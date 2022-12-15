@@ -22,7 +22,6 @@ let controls: OrbitControls
 onMounted(() => {
     const root: HTMLElement = dingus.value
     new ResizeObserver((event) => {
-        console.log('resize')
         const { clientWidth: width, clientHeight: height } = event[0].target
         renderer.setSize(width, height, false)
         camera.aspect = width / height;
