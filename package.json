@@ -13,11 +13,12 @@
         "@nuxtjs/robots": "^3.0.0",
         "primeflex": "^3.3.0",
         "primeicons": "^6.0.1",
-        "primevue": "^3.20.0"
+        "primevue": "^3.20.0",
+        "three": "^0.147.0"
     },
     "devDependencies": {
         "@nuxt/image-edge": "^1.0.0-27827328.bc9ddc0",
-        "nuxt": "3.0.0",
-        "nuxt-purgecss": "^2.0.0"
+        "@types/three": "^0.146.0",
+        "nuxt": "3.0.0"
     }
 }
