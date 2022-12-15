@@ -65,4 +65,15 @@ function animate() {
     stats.update()
     renderer.render(scene, camera)
 }
+
+useHead({
+    title: 'Interactive Dingus',
+    meta: [
+        {
+            hid: "description",
+            name: "description",
+            content: "Interactive Dingus model",
+        },
+    ],
+})
 </script>
