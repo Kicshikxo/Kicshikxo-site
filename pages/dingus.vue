@@ -26,8 +26,8 @@ onMounted(() => {
     new ResizeObserver((event) => {
         const { clientWidth: width, clientHeight: height } = event[0].target
         renderer.setSize(width, height, false)
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
+        camera.aspect = width / height
+        camera.updateProjectionMatrix()
     }
     ).observe(root)
 
@@ -55,6 +55,15 @@ onMounted(() => {
     const environment = new RoomEnvironment()
     const pmremGenerator = new Three.PMREMGenerator(renderer)
     scene.environment = pmremGenerator.fromScene(environment).texture
+
+    const loader = new Three.TextureLoader()
+    const texture = loader.load(
+        'models/skyboxes/DayInTheClouds4k.png',
+        () => {
+            const renderTarget = new Three.WebGLCubeRenderTarget(texture.image.height)
+            renderTarget.fromEquirectangularTexture(renderer, texture)
+            scene.background = renderTarget.texture
+        })
 
     controls = new OrbitControls(camera, renderer.domElement)
     controls.enableDamping = true
