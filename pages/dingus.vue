@@ -1,7 +1,5 @@
 <template>
-    <div ref="dingus" class="bg-blue-100 w-screen h-screen flex cursor-move">
-        <p-progress-spinner class="align-self-center" />
-    </div>
+    <div ref="dingus" class="bg-blue-100 w-screen h-screen flex cursor-move" />
 </template>
 
 <script setup lang="ts">
@@ -57,9 +55,9 @@ onMounted(() => {
     scene.environment = pmremGenerator.fromScene(environment).texture
 
     const loader = new Three.TextureLoader()
-    const texture = loader.load(
+    loader.load(
         'models/skyboxes/DayInTheClouds4k.png',
-        () => {
+        (texture) => {
             const renderTarget = new Three.WebGLCubeRenderTarget(texture.image.height)
             renderTarget.fromEquirectangularTexture(renderer, texture)
             scene.background = renderTarget.texture
