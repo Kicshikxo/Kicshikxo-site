@@ -25,7 +25,7 @@ onMounted(() => {
     stats = Stats()
     root.appendChild(stats.dom)
 
-    camera = new Three.PerspectiveCamera(70, root.clientWidth / root.clientHeight, 0.1, 10)
+    camera = new Three.PerspectiveCamera(70, root.clientWidth / root.clientHeight, 0.1, 11)
     camera.position.set(2, 1.5, 4)
 
     scene = new Three.Scene()
