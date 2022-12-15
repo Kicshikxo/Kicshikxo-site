@@ -21,8 +21,13 @@ let controls: OrbitControls
 
 onMounted(() => {
     const root: HTMLElement = dingus.value
-    new ResizeObserver((event) =>
-        renderer.setSize(event[0].target.clientWidth, event[0].target.clientHeight, false)
+    new ResizeObserver((event) => {
+        console.log('resize')
+        const { clientWidth: width, clientHeight: height } = event[0].target
+        renderer.setSize(width, height, false)
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+    }
     ).observe(root)
 
     stats = Stats()
@@ -43,6 +48,7 @@ onMounted(() => {
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(root.clientWidth, root.clientHeight)
     renderer.outputEncoding = Three.sRGBEncoding
+    renderer.domElement.classList.add('w-full', 'h-full')
     root.appendChild(renderer.domElement)
 
     const environment = new RoomEnvironment()
