@@ -1,5 +1,7 @@
 <template>
-    <div ref="dingus" class="bg-blue-100 w-screen h-screen cursor-move" />
+    <div ref="dingus" class="bg-blue-100 w-screen h-screen flex cursor-move">
+        <p-progress-spinner class="align-self-center" />
+    </div>
 </template>
 
 <script setup lang="ts">
