@@ -26,8 +26,7 @@ onMounted(() => {
         renderer.setSize(width, height, false)
         camera.aspect = width / height
         camera.updateProjectionMatrix()
-    }
-    ).observe(root)
+    }).observe(root)
 
     stats = Stats()
     root.appendChild(stats.dom)
@@ -37,11 +36,9 @@ onMounted(() => {
 
     scene = new Three.Scene()
 
-    new GLTFLoader()
-        .setPath('models/gltf/')
-        .load('Dingus.glb', (gltf) => {
-            scene.add(gltf.scene)
-        })
+    new GLTFLoader().setPath('models/gltf/').load('Maxwell.glb', (gltf) => {
+        scene.add(gltf.scene)
+    })
 
     renderer = new Three.WebGLRenderer({ antialias: true, alpha: true })
     renderer.setPixelRatio(window.devicePixelRatio)
@@ -54,14 +51,11 @@ onMounted(() => {
     const pmremGenerator = new Three.PMREMGenerator(renderer)
     scene.environment = pmremGenerator.fromScene(environment).texture
 
-    const loader = new Three.TextureLoader()
-    loader.load(
-        'models/skyboxes/DayInTheClouds4k.png',
-        (texture) => {
-            const renderTarget = new Three.WebGLCubeRenderTarget(texture.image.height)
-            renderTarget.fromEquirectangularTexture(renderer, texture)
-            scene.background = renderTarget.texture
-        })
+    new Three.TextureLoader().load('models/skyboxes/DayInTheClouds4k.png', (texture) => {
+        const renderTarget = new Three.WebGLCubeRenderTarget(texture.image.height)
+        renderTarget.fromEquirectangularTexture(renderer, texture)
+        scene.background = renderTarget.texture
+    })
 
     controls = new OrbitControls(camera, renderer.domElement)
     controls.enableDamping = true
@@ -81,13 +75,13 @@ function animate() {
 }
 
 useHead({
-    title: 'Interactive Dingus',
+    title: 'Interactive Maxwell',
     meta: [
         {
-            hid: "description",
-            name: "description",
-            content: "Interactive Dingus model",
-        },
-    ],
+            hid: 'description',
+            name: 'description',
+            content: 'Interactive Maxwell model'
+        }
+    ]
 })
 </script>
