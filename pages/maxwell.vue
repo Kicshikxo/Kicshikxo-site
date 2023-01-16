@@ -1,5 +1,17 @@
 <template>
-    <div ref="dingus" class="bg-blue-100 w-screen h-screen flex cursor-move" />
+    <div ref="maxwell" class="flex flex-column justify-content-center bg-blue-100 w-screen h-screen cursor-move">
+        <div class="absolute flex flex-column gap-2 p-2">
+            <nuxt-img
+                v-for="(skybox, index) in skyboxes"
+                :src="skybox.thumb"
+                width="32"
+                height="32"
+                class="border-2 border-circle cursor-pointer"
+                :class="selectedSkyboxIndex === index ? 'border-white' : 'border-transparent'"
+                @click="changeSkybox(index)"
+            />
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -11,7 +23,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
-const dingus = ref()
+const maxwell = ref<HTMLElement>()
 
 let stats: Stats
 let camera: Three.PerspectiveCamera
@@ -19,8 +31,52 @@ let scene: Three.Scene
 let renderer: Three.WebGLRenderer
 let controls: OrbitControls
 
+type Skybox = {
+    thumb: string
+    right: string
+    left: string
+    top: string
+    bottom: string
+    front: string
+    back: string
+}
+
+const skyboxes: Skybox[] = [
+    {
+        thumb: 'models/skyboxes/red/thumb.jpg',
+        right: 'models/skyboxes/red/right.png',
+        left: 'models/skyboxes/red/left.png',
+        top: 'models/skyboxes/red/top.png',
+        bottom: 'models/skyboxes/red/bottom.png',
+        front: 'models/skyboxes/red/front.png',
+        back: 'models/skyboxes/red/back.png'
+    },
+    {
+        thumb: 'models/skyboxes/blue/thumb.jpg',
+        right: 'models/skyboxes/blue/right.png',
+        left: 'models/skyboxes/blue/left.png',
+        top: 'models/skyboxes/blue/top.png',
+        bottom: 'models/skyboxes/blue/bottom.png',
+        front: 'models/skyboxes/blue/front.png',
+        back: 'models/skyboxes/blue/back.png'
+    },
+    {
+        thumb: 'models/skyboxes/green/thumb.jpg',
+        right: 'models/skyboxes/green/right.png',
+        left: 'models/skyboxes/green/left.png',
+        top: 'models/skyboxes/green/top.png',
+        bottom: 'models/skyboxes/green/bottom.png',
+        front: 'models/skyboxes/green/front.png',
+        back: 'models/skyboxes/green/back.png'
+    }
+]
+
+const skyboxTextures: { index: number; texture: Three.CubeTexture }[] = []
+
+const selectedSkyboxIndex = ref<number>(0)
+
 onMounted(() => {
-    const root: HTMLElement = dingus.value
+    const root = maxwell.value!
     new ResizeObserver((event) => {
         const { clientWidth: width, clientHeight: height } = event[0].target
         renderer.setSize(width, height, false)
@@ -51,11 +107,7 @@ onMounted(() => {
     const pmremGenerator = new Three.PMREMGenerator(renderer)
     scene.environment = pmremGenerator.fromScene(environment).texture
 
-    new Three.TextureLoader().load('models/skyboxes/DayInTheClouds4k.png', (texture) => {
-        const renderTarget = new Three.WebGLCubeRenderTarget(texture.image.height)
-        renderTarget.fromEquirectangularTexture(renderer, texture)
-        scene.background = renderTarget.texture
-    })
+    setSkybox(selectedSkyboxIndex.value)
 
     controls = new OrbitControls(camera, renderer.domElement)
     controls.enableDamping = true
@@ -66,6 +118,31 @@ onMounted(() => {
 
     animate()
 })
+
+function changeSkybox(index: number) {
+    selectedSkyboxIndex.value = index
+    setSkybox(index)
+}
+
+function setSkybox(index: number) {
+    let skyboxTexture = skyboxTextures.find((skybox) => skybox.index === index)?.texture
+
+    if (!skyboxTexture) {
+        const skybox = skyboxes[index]
+        skyboxTexture = new Three.CubeTextureLoader().load([
+            skybox.right,
+            skybox.left,
+            skybox.top,
+            skybox.bottom,
+            skybox.front,
+            skybox.back
+        ])
+
+        skyboxTextures.push({ index, texture: skyboxTexture })
+    }
+
+    scene.background = skyboxTexture
+}
 
 function animate() {
     requestAnimationFrame(animate)
