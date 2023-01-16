@@ -73,7 +73,7 @@ const skyboxes: Skybox[] = [
 
 const skyboxTextures: { index: number; texture: Three.CubeTexture }[] = []
 
-const selectedSkyboxIndex = ref<number>(0)
+const selectedSkyboxIndex = ref<number>(1)
 
 onMounted(() => {
     const root = maxwell.value!
