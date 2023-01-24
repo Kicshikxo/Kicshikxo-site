@@ -8,18 +8,17 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
-        "@mdi/js": "^7.0.96",
         "@nuxtjs/color-mode": "^3.2.0",
         "@nuxtjs/robots": "^3.0.0",
-        "nuxt-icon": "^0.1.8",
+        "nuxt-icon": "^0.2.7",
         "primeflex": "^3.3.0",
         "primeicons": "^6.0.1",
-        "primevue": "^3.20.0",
-        "three": "^0.147.0"
+        "primevue": "^3.22.4",
+        "three": "^0.148.0"
     },
     "devDependencies": {
-        "@nuxt/image-edge": "^1.0.0-27827328.bc9ddc0",
-        "@types/three": "^0.146.0",
+        "@nuxt/image-edge": "^1.0.0-27907872.f4dd19d",
+        "@types/three": "^0.148.1",
         "nuxt": "3.0.0"
     }
 }
