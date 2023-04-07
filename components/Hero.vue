@@ -13,7 +13,7 @@
                             alt="hello emoji"
                         />
                     </div>
-                    <div class="text-5xl font-medium mb-1">и я — начинающий разработчик</div>
+                    <div class="text-5xl font-medium mb-1">и я — разработчик</div>
                 </div>
 
                 <p class="mt-1 mb-4 text-700 text-2xl">Этот веб-сайт расскажет обо мне</p>
