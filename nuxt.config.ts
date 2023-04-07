@@ -36,12 +36,7 @@ export default defineNuxtConfig({
         '~/assets/css/main.css'
     ],
 
-    modules: [
-        '@nuxtjs/color-mode',
-        '@nuxt/image-edge',
-        '@nuxtjs/robots',
-        'nuxt-icon'
-    ],
+    modules: ['@nuxtjs/color-mode', '@nuxt/image-edge', '@nuxt/devtools', '@nuxtjs/robots', 'nuxt-icon'],
 
     build: {
         transpile: ['primevue', 'three']
