@@ -84,7 +84,7 @@ onMounted(() => {
         camera.updateProjectionMatrix()
     }).observe(root)
 
-    stats = Stats()
+    stats = new Stats()
     root.appendChild(stats.dom)
 
     camera = new Three.PerspectiveCamera(70, root.clientWidth / root.clientHeight, 0.1, 100)
