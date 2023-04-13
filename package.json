@@ -17,9 +17,9 @@
         "three": "^0.151.3"
     },
     "devDependencies": {
-        "@nuxt/devtools": "^0.3.2",
-        "@nuxt/image-edge": "^1.0.0-28008586.381b906",
+        "@nuxt/devtools": "^0.4.0",
+        "@nuxt/image-edge": "^1.0.0-28020728.5df24eb",
         "@types/three": "^0.150.1",
-        "nuxt": "3.3.3"
+        "nuxt": "^3.4.1"
     }
 }
