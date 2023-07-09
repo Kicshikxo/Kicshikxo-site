@@ -4,22 +4,24 @@
         "build": "nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
-        "preview": "nuxt preview",
-        "postinstall": "nuxt prepare"
+        "postinstall": "nuxt prepare",
+        "preview": "nuxt preview"
     },
     "dependencies": {
-        "@nuxtjs/color-mode": "^3.2.0",
+        "@nuxtjs/color-mode": "^3.3.0",
         "@nuxtjs/robots": "^3.0.0",
-        "nuxt-icon": "^0.4.1",
+        "@pinia/nuxt": "^0.4.11",
+        "nuxt-icon": "^0.4.2",
+        "pinia": "^2.1.4",
         "primeflex": "^3.3.1",
         "primeicons": "^6.0.1",
         "primevue": "^3.29.2",
-        "three": "^0.153.0"
+        "three": "^0.154.0"
     },
     "devDependencies": {
-        "@nuxt/devtools": "^0.5.5",
-        "@nuxt/image-edge": "^1.0.0-rc.1-28103886.fcc9b7a",
-        "@types/three": "^0.152.1",
-        "nuxt": "^3.5.3"
+        "@nuxt/devtools": "^0.6.7",
+        "@nuxt/image-edge": "^1.0.0-rc.1-28143901.afe4120",
+        "@types/three": "^0.153.0",
+        "nuxt": "^3.6.2"
     }
 }
