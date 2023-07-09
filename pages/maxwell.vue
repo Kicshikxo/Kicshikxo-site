@@ -99,7 +99,7 @@ onMounted(() => {
     renderer = new Three.WebGLRenderer({ antialias: true, alpha: true })
     renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(root.clientWidth, root.clientHeight)
-    renderer.outputEncoding = Three.sRGBEncoding
+    renderer.outputColorSpace = Three.SRGBColorSpace
     renderer.domElement.classList.add('w-full', 'h-full')
     root.appendChild(renderer.domElement)
 
