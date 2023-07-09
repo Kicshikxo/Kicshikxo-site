@@ -33,6 +33,7 @@ export default defineNuxtConfig({
         'primeflex/primeflex.css',
 
         '~/assets/css/rubik.fontface.css',
+        '~/assets/css/theme.css',
         '~/assets/css/main.css'
     ],
 
