@@ -16,15 +16,15 @@
                     <div class="text-5xl font-medium mb-1">и я — разработчик</div>
                 </div>
 
-                <p class="mt-1 mb-4 text-700 text-2xl">Этот веб-сайт расскажет обо мне</p>
+                <p class="mt-1 mb-4 text-700 text-2xl">Этот сайт расскажет обо мне</p>
 
                 <div class="flex flex-column md:flex-row gap-3">
                     <nuxt-link to="https://github.com/Kicshikxo" target="blank" class="no-underline">
-                        <p-button label="Github" type="button" class="p-button-raised" icon="pi w-1rem pi-github" />
+                        <Button label="Github" type="button" class="Button-raised" icon="pi w-1rem pi-github" />
                     </nuxt-link>
 
                     <nuxt-link to="https://t.me/Kicshikxo" target="blank" class="no-underline">
-                        <p-button label="Telegram" type="button" class="p-button-outlined" icon="pi w-1rem pi-telegram" />
+                        <Button label="Telegram" type="button" class="Button-outlined" icon="pi w-1rem pi-telegram" />
                     </nuxt-link>
                 </div>
             </section>
@@ -47,6 +47,8 @@
 </template>
 
 <script setup>
+import Button from 'primevue/button/Button.vue'
+
 function scrolldown() {
     document.querySelector('#end-hero-section').scrollIntoView({
         behavior: 'smooth'
