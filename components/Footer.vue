@@ -6,6 +6,7 @@
                 <nuxt-link
                     to="maxwell"
                     class="cursor-pointer text-500 transition-colors transition-duration-150 hover:text-700"
+                    aria-label="Interactive maxwell page"
                 >
                     <Icon name="ph:cat-fill" class="text-2xl" />
                 </nuxt-link>
@@ -13,6 +14,7 @@
                     to="https://github.com/Kicshikxo"
                     target="blank"
                     class="cursor-pointer text-500 transition-colors transition-duration-150 hover:text-700"
+                    aria-label="Github profile"
                 >
                     <i class="pi pi-github text-xl" />
                 </nuxt-link>
@@ -20,6 +22,7 @@
                     to="https://t.me/Kicshikxo"
                     target="blank"
                     class="cursor-pointer text-500 transition-colors transition-duration-150 hover:text-700"
+                    aria-label="Telegram account"
                 >
                     <i class="pi pi-telegram text-xl" />
                 </nuxt-link>

@@ -12,7 +12,13 @@
                 </span>
                 <div class="text-800 mb-3 font-medium">{{ lang }}</div>
                 <div class="text-700 text-sm font-medium line-height-2">{{ Math.round(percent) }}%</div>
-                <ProgressBar :value="percent" :showValue="false" class="w-6rem" style="height: 4px" />
+                <ProgressBar
+                    :value="percent"
+                    :showValue="false"
+                    class="w-6rem"
+                    style="height: 4px"
+                    :area-label="`${lang} progress bar`"
+                />
             </div>
         </div>
     </div>
