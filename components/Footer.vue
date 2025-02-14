@@ -4,6 +4,13 @@
             <div class="line-height-3">© {{ new Date().getFullYear() }} Kicshikxo, All rights reserved</div>
             <div class="flex gap-3">
                 <nuxt-link
+                    to="https://pico-td.kicshikxo.ru/"
+                    class="cursor-pointer text-500 transition-colors transition-duration-150 hover:text-700"
+                    aria-label="Pico TD game"
+                >
+                    <Icon name="game-icons:stone-tower" class="text-2xl" />
+                </nuxt-link>
+                <nuxt-link
                     to="maxwell"
                     class="cursor-pointer text-500 transition-colors transition-duration-150 hover:text-700"
                     aria-label="Interactive maxwell page"
