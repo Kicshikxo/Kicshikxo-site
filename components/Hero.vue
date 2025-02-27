@@ -40,7 +40,7 @@
             />
         </div>
         <div class="absolute bottom-0 left-0 right-0 text-center">
-            <div @click="scrolldown" class="scrolldown pi pi-chevron-down mb-3 text-2xl text-800"></div>
+            <div @click="scrolldown" class="scrolldown pi pi-chevron-down text-2xl text-800"></div>
         </div>
         <div id="end-hero-section" class="absolute bottom-0"></div>
     </section>
